@@ -53,26 +53,40 @@
       <hr class="my-4">
               
       <div class="row">
-        <div class="col-md-12 col-sm-12">
+        <div class="col">
 
-      <!-- Add float left to the CSS to wrap around the image? -->    
-          <p>
-          Contact form goes here</p>
+<!--Form goes here-->
+          <form>
+            <div class="form-group">
+              <label for="formGroupExampleInput">Name</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Email</label>
+               <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="example@gmail.com">
+            </div>
 
+            <div class="form-group">
+                <label for="exampleTextarea">Message</label>
+                <textarea class="form-control" id="exampleTextarea" rows="4" placeholder="Type your message"></textarea>
+              </div>
+
+<!--Add submit button-->
+
+          </form>
         </div>
-  
+      </div>
       <!-- Close out left-column entirely -->    
-
-      </div>
-      </div>
-        <!-- Main-body right-column (spans 4 columns on laptops but full width (12 col) on smaller devices) -->
+    </div>
+          
+    <!-- Main-body right-column (spans 4 columns on laptops but full width (12 col) on smaller devices) -->
       
-  <!-- This needs to move to the top of About us section-->
-      <div class="col-md-4 col-sm-12 my-3">
-        <div class="card">  
+    <div class="col-md-4 col-sm-12 my-3">
+      <div class="card">  
         <div class="card-header"><h3 class="font-weight-bold text-center">Connect with Me</h3>
         </div>
-            
+
+      <!-- Add links to social sites-->           
         <div class="card-body">
         <ul class="list-inline text-center">
           <li class="list-inline-item">
@@ -90,18 +104,16 @@
 </div>
 </div>
 
+
 <div class="clearfix"></div>
- <!--Full footer area-->     
-<!--footer is not floating at the bottom-->
+
+<!--Full footer area-->     
+
 <footer> 
   <div class="fixed-bottom bg-info text-white text-center p-3">
     &copy; 2018 Joyce Santos
   </div>
 </footer>
-
-<!-- <div class="jumbotron-fluid bg-info text-white p-3 text-center">
-    <h3>&copy;2018 Joyce Santos</h3>
-  </div> -->
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>

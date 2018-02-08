@@ -1,5 +1,14 @@
-<!DOCTYPE html> // TODO Open items: resize social icons on mobile, fix portfolio page - space between images - heading need to show relative
-to the image and with background, footer is overwriting screen in mobile environments
+<!DOCTYPE html> 
+<!-- TODO Open items: resize social icons on mobile, fix portfolio page - space between images - heading need to show relative
+// todo to the image and with background, footer is overwriting screen in mobile environments. 
+// todo Add margin bottom to style sheet .wrapper {
+//todo  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -50px;
+}
+-->
 
 <html lang="en">
 
@@ -9,10 +18,11 @@ to the image and with background, footer is overwriting screen in mobile environ
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Joyce Santos Portfolio</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-
+  
   <!-- Create Nav bar -->
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-info">
@@ -52,7 +62,9 @@ to the image and with background, footer is overwriting screen in mobile environ
     </div>
   </nav>
 
+<!-- <div class="wrapper"> -->
   <div class="container">
+  
     <div class="row">
       <div class="col-md-8 col-sm-12 my-3">
         <h2 class="font-weight-bold">About Me</h2>
@@ -93,28 +105,28 @@ to the image and with background, footer is overwriting screen in mobile environ
       <!-- Main-body right-column (spans 4 columns on laptops but full width (12 col) on smaller devices) -->
 
       <!-- This needs to move to the top of About us section-->
-      <div class="col-md-4 col-sm-12 my-3">
+      <div class="col-md-4 col-sm-12 my-3 mb-5">
         <div class="card">
           <!-- Override formatting for h3 class in CSS-->
           <div class="card-header">
             <h3 class="font-weight-bold text-center">Connect with Me</h3>
           </div>
 
-          <div class="card-body">
+          <div class="card-body" style="height:auto">
             <ul class="list-inline text-center">
               <li class="list-inline-item">
                 <a href="https://github.com/puppitty" target="_blank">
-                  <img src="./assets/images/github.png" width="75" height="75" class="social image-fluid" alt="Github">
+                  <img src="./assets/images/github.png" width="60" height="60" class="social image-fluid" alt="Github">
                 </a>
               </li>
               <li class="list-inline-item">
                 <a href="https://www.linkedin.com/in/joyce-santos-363b084/" target="_blank">
-                  <img src="./assets/images/linkedin.png" width="75" height="75" class="social class img-fluid" alt="LinkedIn">
+                  <img src="./assets/images/linkedin.png" width="60" height="60" class="social class img-fluid" alt="LinkedIn">
                 </a>
               </li>
               <li class="list-inline-item">
                 <a href="https://stackoverflow.com/users/9157213/joyce-santos" target="_blank">
-                  <img src="./assets/images/stackoverflow.png" width="75" height="75" class="social image-fluid" alt="Stack Overflow">
+                  <img src="./assets/images/stackoverflow.png" width="60" height="60" class="social image-fluid" alt="Stack Overflow">
                 </a>
               </li>
             </ul>
@@ -123,12 +135,16 @@ to the image and with background, footer is overwriting screen in mobile environ
       </div>
     </div>
   </div>
+</div>
+
+<div class="push"></div>
+
 
 
   <div class="clearfix"></div>
   <!--Full footer area-->
 
-  <footer>
+  <footer> 
     <div class="fixed-bottom bg-info text-white text-center p-3">
       &copy; 2018 Joyce Santos
     </div>

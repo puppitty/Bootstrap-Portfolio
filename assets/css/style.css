@@ -4,3 +4,14 @@
 .push {
   height: 70px;
 }
+
+h5 {
+  color: white;
+  text-align: center;
+  padding: 10px 0px;
+  width: 100%;
+  font-weight: bold;
+  position: absolute;
+  bottom: 15px;
+  left: 0px;
+}

@@ -15,3 +15,22 @@ h5 {
   bottom: 15px;
   left: 0px;
 }
+
+/* .card-img {
+  position: relative;
+} */
+
+a {
+  /* z-index: 1; */
+  position: relative;
+  /* z-index: 1; */
+}
+
+/* .card-img {
+  z-index: 0;
+} */
+
+.card-title {
+  position: absolute;
+  z-index: 10;
+}
